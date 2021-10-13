@@ -1,0 +1,170 @@
+-I: Adding /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/prep to search path.
+-I: Adding /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib to search path.
+-I: Adding /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/parm to search path.
+-I: Adding /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/cmd to search path.
+-s: Ignoring startup file: leaprc
+-f: Source com.tleap.in.
+
+Welcome to LEaP!
+Sourcing: ./com.tleap.in
+Using H(N)-modified Bondi radii
+----- Source: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/cmd/oldff/leaprc.ff14SB
+----- Source of /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/cmd/oldff/leaprc.ff14SB done
+Log file: ./leap.log
+Loading parameters: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib/amino12.lib
+Loading library: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib/aminoct12.lib
+Loading library: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib/aminont12.lib
+Loading library: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib/nucleic12.lib
+Loading library: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib/atomic_ions.lib
+Loading library: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/lib/solvents.lib
+Loading parameters: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+----- Source: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/cmd/leaprc.gaff
+----- Source of /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /home/guoj1/miniconda3/envs/sams/bin/../dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.8, Mar 2015)
+Loading PDB file: ../01.chimera.mol.prep/2GQG_chainA_apo_minequi_noH.pdb
+  total atoms in file: 2244
+  Leap added 2192 missing atoms according to residue templates:
+       2192 H / lone pairs
+Loading parameters: ./lig.ante.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+Loading Prep file: ./lig.ante.prep
+Loading PDB file: ./lig.ante.pdb
+  total atoms in file: 60
+Checking Unit.
+WARNING: The unperturbed charge of the unit: -9.000000 is not zero.
+
+ -- ignoring the warning.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+old PREP-specified impropers:
+ <1N1 500>:  C19  C16  N5   C13 
+ <1N1 500>:  C12  N3   C13  N5  
+ <1N1 500>:  C15  N3   C14  N4  
+ <1N1 500>:  C13  C11  C12  H12 
+ <1N1 500>:  C12  N4   C11  N   
+ <1N1 500>:  C11  C    N    H   
+ <1N1 500>:  N1   N    C    S   
+ <1N1 500>:  C2   H1   C1   N1  
+ <1N1 500>:  C3   C1   C2   S   
+ <1N1 500>:  C2   N2   C3   O   
+ <1N1 500>:  C3   C4   N2   H2  
+ <1N1 500>:  C9   C5   C4   N2  
+ <1N1 500>:  C10  C4   C9   C8  
+ <1N1 500>:  C9   C7   C8   H8  
+ <1N1 500>:  C8   C6   C7   H7  
+ <1N1 500>:  C7   C5   C6   H6  
+ <1N1 500>:  C4   C6   C5   Cl  
+ total 919 improper torsions applied
+ 17 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CSER	1
+	NGLY	1
+  )
+ (no restraints)
+  Solute vdw bounding box:              54.378 66.084 56.932
+  Total bounding box for atom centers:  74.378 86.084 76.932
+  Solvent unit box:                     18.774 18.774 18.774
+  Total vdw box size:                   77.355 89.185 79.796 angstroms.
+  Volume: 550498.862 A^3 
+  Total mass 275489.564 amu,  Density 0.831 g/cc
+  Added 13492 residues.
+Adding 9 counter ions to "com" using 1A grid
+Grid extends from solute vdw + 2.95  to  8.95
+Resolution:      1.00 Angstrom.
+grid build: 0 sec
+Solvent present: replacing closest with ion
+	 when steric overlaps occur
+Calculating grid charges
+charges: 6 sec
+(Replacing solvent molecule)
+Placed Na+ in com at (1.16, -11.96, -30.75).
+(Replacing solvent molecule)
+Placed Na+ in com at (-1.05, -3.61, 25.97).
+(Replacing solvent molecule)
+Placed Na+ in com at (0.35, -3.34, -27.92).
+(Replacing solvent molecule)
+Placed Na+ in com at (22.08, -10.90, -10.17).
+(Replacing solvent molecule)
+Placed Na+ in com at (23.07, -26.13, 11.72).
+(Replacing solvent molecule)
+Placed Na+ in com at (10.73, -0.40, -23.38).
+(Replacing solvent molecule)
+Placed Na+ in com at (6.24, -1.51, 22.76).
+(Replacing solvent molecule)
+Placed Na+ in com at (-19.04, -10.55, -14.75).
+(Replacing solvent molecule)
+Placed Na+ in com at (-16.47, -16.17, 6.19).
+
+Done adding ions.
+Total unperturbed charge:  -0.000000
+Total perturbed charge:    -0.000000
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+old PREP-specified impropers:
+ <1N1 500>:  C19  C16  N5   C13 
+ <1N1 500>:  C12  N3   C13  N5  
+ <1N1 500>:  C15  N3   C14  N4  
+ <1N1 500>:  C13  C11  C12  H12 
+ <1N1 500>:  C12  N4   C11  N   
+ <1N1 500>:  C11  C    N    H   
+ <1N1 500>:  N1   N    C    S   
+ <1N1 500>:  C2   H1   C1   N1  
+ <1N1 500>:  C3   C1   C2   S   
+ <1N1 500>:  C2   N2   C3   O   
+ <1N1 500>:  C3   C4   N2   H2  
+ <1N1 500>:  C9   C5   C4   N2  
+ <1N1 500>:  C10  C4   C9   C8  
+ <1N1 500>:  C9   C7   C8   H8  
+ <1N1 500>:  C8   C6   C7   H7  
+ <1N1 500>:  C7   C5   C6   H6  
+ <1N1 500>:  C4   C6   C5   Cl  
+ total 919 improper torsions applied
+ 17 improper torsions in old prep form
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CSER	1
+	NGLY	1
+	WAT	13483
+  )
+ (no restraints)
+	Quit
